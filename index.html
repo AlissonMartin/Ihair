@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iHair</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a class="header__logo header__logo--link" href="">
+                <img class="header__logo header__logo--image" src="assets/logo.png" alt="logo">
+            </a>
+            <button class="button button--logo">
+                Login/Cadastro
+            </button>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="list__item">Sobre o iHair</li>
+                <li class="list__item">Fale conosco</li>
+                <li class="list__item">Planos</li>
+                <li class="button button--whatsapp"> <span>
+                    <img class="whatsapp__logo" src="assets/whatsapp__logo.png" alt="">
+                </span> Contato</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider">
+        <div class="slider__controls">
+            <div class="slider__button slider__button--prev" onclick="goPrev()">
+                <img src="assets/right_icon-icons.com_61212.svg" alt="">
+            </div>
+            <div class="slider__button slider__button--next" onclick="goNext()">
+                <img src="assets/right_icon-icons.com_61212.svg " alt="">
+            </div>
+        </div>
+        <div class="slider__width">
+            <div class="slider__item" style="background-image: url(assets/pexels-photo-1319461.jpeg);"></div>
+            <div class="slider__item" style="background-image: url(assets/pexels-photo-1813272.jpeg) ;"></div>
+        </div>
+    </div>
+    <section class="combo__wrapper">
+        <div class="combo__title">
+            <h3 class="title title--combo">Combos para voce</h3>
+            <h4 class="subtitle subtitle--combo">O combo perfeito para sua família</h4>
+        </div>
+        <div class="combo__cards">
+            <div class="combo">
+                <h4 class="title title--combo">Combo Você</h4>
+                <div>
+                    <div class="combo__desc">
+                        <img class="combo__img" src="assets/paravoce__combo.png" alt="">
+                        <h5 class="subtitle subtitle--combo">3 cortes</h5>
+                    </div>
+                    <span class="combo__bonus">3 cortes <br> + <br> 2 barbas de bônus</span>
+                    <div class="price">
+                        <span class="price__only">Por apenas</span>
+                        <span class="money">99,90</span>
+                    </div>
+                    <button class="button button--combo">QUERO !</button>
+                </div>
+            </div>
+            <div class="combo">
+                <h4 class="title title--combo">Combo Família</h4>
+                <div>
+                    <div class="combo__desc">
+                        <img class="combo__img" src="assets/family__combo.png" alt="">
+                        <h5 class="subtitle subtitle--combo">10 cortes</h5>
+                    </div>
+                    <span class="combo__bonus">10 cortes <br> + <br> 6 barbas de bônus</span>
+                    <div class="price">
+                        <span class="price__only">Por apenas</span>
+                        <span class="money">199,90</span>
+                    </div>
+                    <button class="button button--combo">QUERO !</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
