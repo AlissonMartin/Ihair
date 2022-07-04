@@ -1,14 +1,22 @@
+body {
+    background-color: hsl(44, 86%, 90%);
+}
+
 .header__logo--link {
     margin-left: 100px;
 }
 
 .header {
     display: flex;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
     background-color: #222E50;
     color: white;
-    height: 100px;
+    height: 5rem;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.336);
 }
 
 .header__logo {
@@ -16,8 +24,6 @@
     gap: 80px;
     
 }
-
-
 
 .header__logo--image  {
     height: 70px;
@@ -87,11 +93,11 @@
 }
 
 .whatsapp__logo {
-    height: 30px;
+    height: 25px;
 }
 
 .slider {
-    flex: 1;
+    padding-top: 5rem;
     overflow: hidden;
 }
 
@@ -106,14 +112,13 @@
     height: inherit;
     background-size: cover;
     background-position: center;
+    box-shadow: inset 0px 2px 11px black;
 }
 
 .slider__controls {
     display: flex;
     position: absolute;
-    box-shadow: inset 0px 2px 11px black;
     width: 100%;
-    height: 100%;
     align-items: center;
     justify-content: space-between;
 }
@@ -248,7 +253,7 @@
         min-height: 650px;
         width: 100%;
         margin: auto;
-        background-image: linear-gradient(180deg, white 50%, #f1f2f3 50%);
+        background-image: linear-gradient(180deg, hsl(44, 86%, 90%) 50%, hsl(27, 66%, 75%) 50%);
 }
 
 .title--partner {
@@ -325,4 +330,70 @@
     cursor: pointer;
     background-color: #7A4419;
     transform: scale(1.07);
+}
+
+.blocks__container {
+    background-color: hsl(27, 66%, 75%);
+}
+
+.title--blocks {
+    text-align: center;
+}
+
+.blocks__wrapper {
+    min-height: 24rem;
+    width: 75%;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.block {
+    height: 15rem;
+    width: 15rem;
+    background-color: hsl(224, 40%, 30%);
+    border: 6px solid hsl(224, 40%, 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all ease .3s;
+}
+
+.tesoura {
+    transform: rotate(-90deg);
+}
+
+.img__block {
+    height: 8rem;
+}
+
+.block__active {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: rem;
+    width: 12rem;
+    display: none;
+}
+
+.block:hover {
+    background-color: white;
+}
+
+.block:hover .block__active {
+    display: flex;
+    justify-content: center;
+}
+
+.block:hover .img__block {
+    display: none;
+}
+
+.subtitle--inblock {
+    font-size: 1.8rem;
+    text-align: center;
 }
