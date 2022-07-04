@@ -1,9 +1,11 @@
+// Initial Data
 totalSlides = document.querySelectorAll('.slider__item').length
 currentSlide = 0
 bdgImg = ''
 document.querySelector('.slider__width').style.width = `calc(100vw * ${totalSlides})`
 document.querySelector('.slider__controls').style.height = `${document.querySelector('.slider').clientHeight}px`
 
+// Functions
 function goPrev() {
     currentSlide--
     if (currentSlide < 0) {
