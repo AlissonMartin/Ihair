@@ -22,6 +22,8 @@ function goNext() {
     updateMargin()
 }
 
+setInterval(goNext,8000)
+
 function updateMargin() {
     let sliderItemWidth = document.querySelector('.slider__item').clientWidth
     let newMargin = currentSlide * sliderItemWidth

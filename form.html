@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a class="header__logo header__logo--link" href="">
+                <img class="header__logo logo__image" src="assets/logo.png" alt="logo">
+            </a>
+            <button class="button button--logo">
+                Login/Cadastro
+            </button>
+        </div>
+    
+        <nav class="menu">
+            <ul class="menu__list">
+                <a href="aboutus.html">
+                    <li class="list__item">Sobre o iHair</li>
+                </a>
+                <li class="list__item">Fale conosco</li>
+                <li class="list__item">Planos</li>
+                <li class="button button--whatsapp"> <span>
+                        <img class="whatsapp__logo" src="assets/whatsapp__logo.png" alt="">
+                    </span> Contato</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="form__container">
+        <img class="form__img" src="assets/logo.png" alt="">
+        <div class="form__left">
+            <h3  class="title title--form"><strong>Nos mande sua dúvida ou deixe seu feedback</strong>, retornaremos o seu contato em breve.</h3>
+        </div>
+    <form class="form__wrapper validator" method="POST">
+        <input class="form form__name content" type="text" placeholder="Nome*">
+        <input class="form form__email content" type="email" placeholder="E-mail*">
+        <textarea  class="form__content content" placeholder="Mensagem"></textarea>
+        <input class="submit content" type="submit" value="Enviar">
+    </form>
+    </main>
+    
+    <footer class="footer__container">
+        <div class="footer__wrapper">
+            <div class="footer__item">
+                <img class="logo__image logo__image--footer" src="assets/logo.png" alt="">
+            </div>
+            <div class="footer__item">
+                <h4 class="title title--footer">Planos</h4>
+            </div>
+            <div class="footer__item">
+                <h4 class="title title--footer">Combos</h4>
+            </div>
+            <div class="footer__item">
+                <ul class="footer__item__menu">
+                    <li class="subtitle subtitle--footer__menu"><a href="aboutus.html">Sobre o Ihair</a></li>
+                    <li class="subtitle subtitle--footer__menu"><a href="form.html">Fale Conosco</a></li>
+                    <li class="subtitle subtitle--footer__menu">Planos</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__end">
+            <span> &copy Alisson Martin. Todos direitos reservados</span>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/alisson-martin-268475227/" target="_blank"><img
+                        class="logo__image logo__image--socials" src="assets/174857.png" alt=""></a>
+                <a href="https://github.com/AlissonMartin" target="_blank"><img class="logo__image logo__image--socials"
+                        src="assets/githubLogo.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@import url(basiclayout.css);
+
+
+.aboutus {
+    padding-top: 6rem;
+    width: 65%;
+    margin: auto;
+    background-color: hsl(44, 86%, 94%);
+    display: flex;
+
+}
+
+.aboutus__img {
+    height: 40rem;
+    border-radius: 2%;
+    margin: 3rem;
+}
+
+.aboutus__desc {
+    flex: 1;
+    margin: 3rem;
+}
+
+.title--aboutus {
+    margin-left: 3rem;
+    font-size: 3.4rem;
+    color: #7A4419;
+}
+
+.aboutus__span {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.aboutus__span > h3 {
+    font-size: 2rem;
+}
