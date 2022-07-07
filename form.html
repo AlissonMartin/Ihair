@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="header__logo">
-            <a class="header__logo header__logo--link" href="">
+            <a class="header__logo header__logo--link" href="/index.html">
                 <img class="header__logo logo__image" src="assets/logo.png" alt="logo">
             </a>
             <button class="button button--logo">
@@ -24,7 +24,9 @@
                 <a href="aboutus.html">
                     <li class="list__item">Sobre o iHair</li>
                 </a>
-                <li class="list__item">Fale conosco</li>
+                <a href="form.html">
+                    <li class="list__item">Fale conosco</li>
+                </a>
                 <li class="list__item">Planos</li>
                 <li class="button button--whatsapp"> <span>
                         <img class="whatsapp__logo" src="assets/whatsapp__logo.png" alt="">
@@ -38,9 +40,15 @@
             <h3  class="title title--form"><strong>Nos mande sua dúvida ou deixe seu feedback</strong>, retornaremos o seu contato em breve.</h3>
         </div>
     <form class="form__wrapper validator" method="POST">
-        <input class="form form__name content" type="text" placeholder="Nome*">
-        <input class="form form__email content" type="email" placeholder="E-mail*">
+        <input class="form form__name content" type="text" placeholder="Nome*" minlength="2" data-rules="required">
+        <input class="form form__email content" type="email" placeholder="E-mail*" data-rules="required">
         <textarea  class="form__content content" placeholder="Mensagem"></textarea>
+        <select class="form form__select content" id="" data-rules="required">
+            <option value="Como conheceu o iHair" disabled selected>Como conheceu o iHair?</option>
+            <option value="Google">Google</option>
+            <option value="Indicaçao">Indicação</option>
+            <option value="Outros">Outros</option>
+        </select>
         <input class="submit content" type="submit" value="Enviar">
     </form>
     </main>

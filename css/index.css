@@ -14,12 +14,17 @@
     transition: all ease .3s;
 }
 
+
 .slider__item {
     width: 100vw;
     height: inherit;
     background-size: cover;
     background-position: center;
     box-shadow: inset 0px 2px 11px black;
+}
+
+.slider__item--second {
+    background-position: 50% 30%;
 }
 
 .slider__controls {
@@ -166,6 +171,10 @@
     background-position: 100% 100%;
     transform: scale(1.05);
     color:white
+}
+
+.combo:hover .title--combo {
+    color: white;
 }
 
 /* Partners style */
@@ -320,4 +329,115 @@
     font-size: 1.8rem;
     text-align: center;
 }
+
+/* Window area */
+
+.plan__windowarea {
+    position: fixed;
+    display: flex;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.plan__windowbody {
+    width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(148, 148, 148);
+    display: flex;
+}
+
+.window__img {
+    border-top-left-radius:10px ;
+    border-bottom-left-radius: 10px;
+    height: 450px;
+}
+
+.plan__info {
+    flex: 1;
+}
+
+.title--plan__info {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.plan__select {
+    margin: 1.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.select__button {
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: rgb(199, 199, 199);
+    width: 8rem;
+    height: 2.2rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.425);
+}
+
+.select__button--first {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.select__button--second {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.selected {
+    background-color: #214179;
+    color: white;
+}
+
+.plan__desc {
+    margin: 2rem;
+}
+
+.plan__buttons {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.button--planbutton__first {
+        background-color: rgb(199, 199, 199);
+        color: black;
+}
+
+.button--planbutton__second {
+    background-color: #214179;
+    color: white;
+    width: 15rem;
+    height: 4rem;
+}
+
+.plan__buttons {
+    cursor: pointer;
+}
+
+.window__price {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.currency {
+    font-size: 1.4rem;
+}
+
 
