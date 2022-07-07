@@ -27,7 +27,7 @@
                 <a href="form.html">
                     <li class="list__item">Fale conosco</li>
                 </a>
-                <li class="list__item">Planos</li>
+                <li class="list__item" onclick="showWindow(event)">Planos</li>
                 <li class="button button--whatsapp"> <span>
                     <img class="whatsapp__logo" src="assets/whatsapp__logo.png" alt="">
                 </span> Contato</li>
@@ -51,12 +51,12 @@
     </div>
     <section class="combo__container">
         <div class="combo__title">
-            <h3 class="title title--combo">Combos para voce</h3>
-            <h4 class="subtitle subtitle--combo">O combo perfeito para sua família</h4>
+            <h3 class="title title--combo">Planos para voce</h3>
+            <h4 class="subtitle subtitle--combo">O Plano perfeito para sua família</h4>
         </div>
         <div class="combo__cards">
             <div class="combo">
-                <h4 class="title title--combo">Combo Você</h4>
+                <h4 class="title title--combo">Plano Você</h4>
                 <div>
                     <div class="combo__desc">
                         <img class="combo__img" src="assets/paravoce__combo.png" alt="">
@@ -66,12 +66,13 @@
                     <div class="price">
                         <span class="price__only">Por apenas</span>
                         <span class="money">99,90</span>
+                        <span class="price__only">/mês</span>
                     </div>
-                    <button class="button button--combo">QUERO !</button>
+                    <button class="button button--combo" onclick="showWindow(event)" data-key="0">QUERO !</button>
                 </div>
             </div>
             <div class="combo">
-                <h4 class="title title--combo">Combo Família</h4>
+                <h4 class="title title--combo">Plano Família</h4>
                 <div>
                     <div class="combo__desc">
                         <img class="combo__img" src="assets/family__combo.png" alt="">
@@ -81,8 +82,9 @@
                     <div class="price">
                         <span class="price__only">Por apenas</span>
                         <span class="money">199,90</span>
+                        <span class="price__only">/mês</span>
                     </div>
-                    <button class="button button--combo">QUERO !</button>
+                    <button class="button button--combo " onclick="showWindow(event)" data-key="1">QUERO !</button>
                 </div>
             </div>
         </div>
@@ -149,13 +151,13 @@
                 <h4 class="title title--footer">Planos</h4>
             </div>
             <div class="footer__item">
-                <h4 class="title title--footer">Combos</h4>
+                <h4 class="title title--footer">Parceria</h4>
             </div>
             <div class="footer__item">
                 <ul class="footer__item__menu">
                     <li class="subtitle subtitle--footer__menu"><a href="aboutus.html">Sobre o Ihair</a></li>
                     <li class="subtitle subtitle--footer__menu"><a href="form.html">Fale Conosco</a></li>
-                    <li class="subtitle subtitle--footer__menu">Planos</li>
+                    <li class="subtitle subtitle--footer__menu" onclick="showWindow(event)">Planos</li>
                 </ul>
             </div>
         </div>
@@ -181,22 +183,25 @@
                     </div>
                 </div>
                 <div class="plan__desc">
-                    <h3 class="title title--plan__info">aaaaaaaa</h3>
+                    <h3 class="title title--plan__desc">aaaaaaaa</h3>
                     <h4 class="subtitle subtitle--plan__desc">aaaaaa</h4>
                 </div>
                 <div class="window__price">
                     <div class="currency">
                         R$
                     </div>
-                    <div class="money">
+                    <div class="money money--window">
                         --
+                    </div>
+                    <div class="currency">
+                        /mês
                     </div>
                 </div>
                 <div class="plan__buttons">
-                    <button class="button button--planbutton__first">
+                    <button class="button button--planbutton__first" onclick="closeWindow()">
                         Cancelar
                     </button>
-                    <button class="button button--planbutton__second">
+                    <button class="button button--planbutton__second" onclick="closeWindow()">
                         Confirmar
                     </button>
                 </div>
@@ -204,5 +209,6 @@
         </div>
     </div>
     <script src="index.js"></script>
+    <script src="plans.js"></script>
 </body>
 </html>

@@ -46,6 +46,7 @@ a {
     width: 170px;
     font-size: 1.15em;
     font-weight: 600;
+    transition: all ease .5s;
 }
 
 .button--logo {

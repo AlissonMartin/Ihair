@@ -1,3 +1,5 @@
+
+
 // Initial Data
 totalSlides = document.querySelectorAll('.slider__item').length
 currentSlide = 0
