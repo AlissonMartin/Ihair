@@ -208,6 +208,7 @@
     background-size: cover;
     position: relative;
     transition: all ease 0.3s;
+    background-color: #1e3c72
 }
 
 .partner__barbershop {
@@ -218,6 +219,7 @@
     background-size: cover;
     position: relative;
     transition: all ease 0.4s;
+    background-color: #1e3c72;
 }
 
 .partner__desc {
@@ -294,10 +296,7 @@
     align-items: center;
     position: relative;
     transition: all ease .3s;
-}
-
-.tesoura {
-    transform: rotate(-90deg);
+    user-select: none;
 }
 
 .img__block {

@@ -7,6 +7,12 @@ bdgImg = ''
 document.querySelector('.slider__width').style.width = `calc(100vw * ${totalSlides})`
 document.querySelector('.slider__controls').style.height = `${document.querySelector('.slider').clientHeight}px`
 
+const hamburger = document.querySelector('.hamburger')
+
+// Events
+
+hamburger.addEventListener('click', toggleMenu)
+
 // Functions
 function goPrev() {
     currentSlide--
@@ -50,4 +56,14 @@ function showTitle(e) {
     e.target.style.backgroundColor = 'none'
     e.target.querySelector('.title').style.display = 'inline-block'
     e.target.querySelector('.subtitle').style.display = 'none'
+}
+
+function toggleMenu() {
+    if (hamburger.classList.contains('active')) {
+        hamburger.classList.remove('active')
+        document.querySelector('.menu').style.top = '-100%'
+    } else {
+    hamburger.classList.add('active')
+    document.querySelector('.menu').style.top = '5rem'
+    }
 }

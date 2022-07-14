@@ -1,4 +1,4 @@
-/* Window area */
+/* Window plan area */
 
 .plan__windowarea {
     position: fixed;
@@ -140,3 +140,5 @@
 .select__button:hover {
     cursor: pointer;
 }
+
+/* Window login area */

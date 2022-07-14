@@ -4,7 +4,7 @@
 
 .aboutus {
     padding-top: 6rem;
-    width: 65%;
+    width: 75%;
     margin: auto;
     background-color: hsl(44, 86%, 94%);
     display: flex;
@@ -12,7 +12,7 @@
 }
 
 .aboutus__img {
-    height: 40rem;
+    height: 30rem;
     border-radius: 2%;
     margin: 3rem;
 }
@@ -20,6 +20,7 @@
 .aboutus__desc {
     flex: 1;
     margin: 3rem;
+    min-width: 20rem;
 }
 
 .title--aboutus {

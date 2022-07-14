@@ -15,7 +15,7 @@ a {
 .header {
     display: flex;
     position: fixed;
-    z-index: 99;
+    z-index: 98;
     width: 100%;
     background-color: #222E50;
     color: white;
@@ -102,6 +102,37 @@ a {
 
 .whatsapp__logo {
     height: 25px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.bar {
+    background-color: hsl(44, 86%, 90%);
+    width: 85%;
+    height: 5px;
+    transition: all ease .5s;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.footer__item__menu--mobile {
+    display: none;
+    background-color: #222E50;
+    flex: 1;
+}
+
+.mobile__menu__footer {
+    display: none;
 }
 
 /* Footer style */
@@ -197,4 +228,71 @@ a {
     height: 2rem;
     width: 2rem;
     margin: 0.7rem;
+}
+
+/* Header Media queries */ 
+
+@media all and (max-width:1100px) {
+    /* Header */
+    
+    .header__logo {
+        gap: 15px;
+    }
+    .menu {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: -100%;
+        width: 100%;
+        height: 100vh;
+        margin:0;
+        background-color: hsl(224, 40%, 32%);
+        transition: all ease .3s;
+    }
+    .menu__list {
+        margin-top: 1.5rem;
+        flex-direction: column;
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    .list__item {
+        border: none;
+    }
+
+    .list__item:hover {
+        border: none;
+    }
+
+    .mobile__menu__footer {
+        display: block;
+        margin-top: 4rem;
+        height: 100%;
+        background-color: #222E50;
+        padding: 2rem;
+    }
+    .footer__item__menu--mobile {
+        margin-top: 4rem;
+        display: inline-block;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .subtitle--footer__menu--mobile {
+        text-align: start;
+    }
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(13px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-13px) rotate(-45deg);
+    }
 }
